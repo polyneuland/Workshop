@@ -1,0 +1,143 @@
+* { /*Global*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-header {
+    position: relative; /*O elemento fica onde deveria estar, mas consegue ser ajustado com várias propriedades*/
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.logo-img {
+    position: absolute; /*O elemento sai do fluxo normal da página e pode colocar onde quiser dentro do elemento "pai" que foi posicionado*/
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+}
+
+.header-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /*Permite que os itens quebrem para a próxima linha se não couberem na linha atual, basicamente um quebra texto*/
+}
+
+.logo-text {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /*É usado em tabelas, as bordas das célular se fundem em uma só, vendo apenas uma delas e não sobrepostas*/
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.horario {
+    color: black;
+    font-size: 1rem;
+}
+
+.table-date {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    padding-left: 405px;
+}
+
+.table-date-row td {
+    background-color: #667eea;
+    border-bottom: 2px solid #ddd;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    overflow: hidden; /*Esconde qualquer conteúdo que ultrapasse o tamanho do elemento*/
+    color: #333;
+}
+
+.schedule-table thead th {
+    background-color: #667eea;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    text-align: center;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #e8e8ff; /* cor de destaque suave */
+    transition: background-color 0.3s ease;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: #f7f7ff; /* cor clarinha */
+}
+
+.highlight-row {
+    font-weight: bold;
+    background-color: #f9f9ff;
+}
+
+.highlight-row td {
+    color: #333;
+}
