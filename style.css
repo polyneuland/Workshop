@@ -1,148 +1,212 @@
-* { /*Global*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  /*Global*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .site-header {
-    position: relative; /*O elemento fica onde deveria estar, mas consegue ser ajustado com várias propriedades*/
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+  background: linear-gradient(90deg, #1578bd, #1d9add);
+  color: #fff;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 100%;
 }
 
 .site-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: 700;
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  text-align: center;
+  flex: 1;
 }
 
 .logo-img {
-    position: absolute; /*O elemento sai do fluxo normal da página e pode colocar onde quiser dentro do elemento "pai" que foi posicionado*/
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 100px;
-}
-
-.header-content {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /*Permite que os itens quebrem para a próxima linha se não couberem na linha atual, basicamente um quebra texto*/
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  width: auto;
+  max-width: 120px;
 }
 
 .logo-text {
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    min-height: 100vh;
-    background-image: url("background2.jpg");
-     background-repeat: no-repeat;
-    background-color: white;
-    background-position: bottom center;
-    background-size: contain;
-}
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
 
-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
-}
-
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: -0.5px;
-}
-
-header p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    opacity: 0.95;
+  background-image: url("background2.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 .container {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 50px 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  overflow-x: auto;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse; /*É usado em tabelas, as bordas das célular se fundem em uma só, vendo apenas uma delas e não sobrepostas*/
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse; /*É usado em tabelas, as bordas das célular se fundem em uma só, vendo apenas uma delas e não sobrepostas*/
+  margin-top: 20px;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
 }
 
 th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .horario {
-    color: black;
-    font-size: 1rem;
+  color: black;
+  font-size: 1rem;
 }
 
 .table-date {
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    text-align: left;
-    padding-left: 405px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding-right: 200px;
 }
 
 .table-date-row td {
-    background-color: #667eea;
-    border-bottom: 2px solid #ddd;
+  background-color: #1578bd;
+  border-bottom: 2px solid #ddd;
 }
 
 .schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.20);
-    border-radius: 10px;
-    overflow: hidden; /*Esconde qualquer conteúdo que ultrapasse o tamanho do elemento*/
-    color: #333;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden; /*Esconde qualquer conteúdo que ultrapasse o tamanho do elemento*/
 }
 
 .schedule-table thead th {
-    background-color: #667eea;
-    color: white;
-    font-weight: 600;
-    padding: 12px;
-    text-align: center;
+  background-color: #1578bd;
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  text-align: center;
 }
 
 .schedule-table tbody tr:hover {
-    background-color: #e8e8ff; /* cor de destaque suave */
-    transition: background-color 0.3s ease;
+  background-color: #eaf4ff;
+  transition: 0.25s;
 }
 
 .schedule-table tr:nth-child(even) {
-    background-color: #f7f7ff; /* cor clarinha */
+  background-color: #f7f7ff;
 }
 
 .highlight-row {
-    font-weight: bold;
-    background-color: #f9f9ff;
+  font-weight: bold;
+  background-color: #f9f9ff;
 }
 
 .highlight-row td {
-    color: #333;
+  color: #333;
+}
+
+/*Tablets e notebooks menores*/
+@media (max-width: 992px) {
+  .site-header {
+    padding: 15px 3%;
+  }
+
+  .site-header h1 {
+    font-size: clamp(1.1rem, 3vw, 1.8rem);
+  }
+
+  .logo-img {
+    max-width: 100px;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+}
+
+/*Celulares (modo retrato)*/
+@media (max-width: 576px) {
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .logo-img {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+    width: 30vw;
+    max-width: 90px;
+  }
+
+  .site-header h1 {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+
+  .container {
+    padding: 30px 10px;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 8px 6px;
+  }
+}
+
+/*Celulares muito pequenos (ex: 320px)*/
+@media (max-width: 320px) {
+  .site-header h1 {
+    font-size: 1rem;
+  }
+
+  .logo-img {
+    width: 60px;
+  }
+
+  th, td {
+    font-size: 0.75rem;
+    padding: 6px 4px;
+  }
 }
