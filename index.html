@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="image.png" />
+    <link rel="shortcut icon" href="itaipuparquetec_vertical_colorida.png" /> <!--Ícone do navegador da página-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+    /> <!--Fonte de texto-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    /> <!--Link para ícones-->
     <link rel="stylesheet" href="style.css" />
     <title>Workshop CEASB V - 2025</title>
   </head>
@@ -17,9 +25,103 @@
     <main class="page-content">
       <div class="container">
         <table class="schedule-table">
-          <!--Table é um comando para uma tabela com linhas e colunas-->
+          <thead> <!--Cabeçalho-->
+            <tr class="table-date-row">
+              <th colspan="3" class="table-date">
+                <span class="date-text">
+                  <i class="fa-solid fa-calendar-days"></i> <!--Ícone do calendário-->
+                  25 DE NOVEMBRO DE 2025
+                </span> <!--Estiliza só uma parte do texto-->
+              </th> <!--Cria cabeçalho da tabela-->
+            </tr> <!--Cria linhas na tabela-->
+            <tr>
+              <th>HORÁRIO</th>
+              <th>Projeto</th>
+              <th>APRESENTADOR(ES)</th>
+            </tr>
+          </thead>
+
+          <tbody> <!--Parte principal da tabela-->
+            <tr class="highlight-row">
+              <td class="horario">08:00</td>
+              <td class="projeto">ABERTURA</td>
+              <td class="apresentador">Itaipu Parquetec e Itaipu Binacional</td>
+            </tr>
+
+            <tr>
+              <td class="horario">08:20</td>
+              <td class="projeto">Apresentação Convênio CEASB V</td>
+              <td class="apresentador">Alexandra da Silva Belini</td>
+            </tr>
+
+            <tr>
+              <td class="horario">08:40</td>
+              <td class="projeto">MGBA | Modelo Geotécnico para análises dos Modos de falha das Barragens de Terra (ME e MD) e Enrocamento de Itaipu</td>
+              <td class="apresentador">Rodrigo de Lima Rodrigues</td>
+            </tr>
+
+            <tr>
+              <td class="horario">09:00</td>
+              <td class="projeto">S3DB - Simulações Tridimensionais de Barragens</td>
+              <td class="apresentador">Adriana Elisabete Limberger</td>
+            </tr>
+
+            <tr class="highlight-row">
+              <td class="horario">09:20</td>
+              <td class="projeto">INTERVALO</td>
+              <td class="apresentador">-</td>
+            </tr>
+
+            <tr>
+              <td class="horario">09:40</td>
+              <td class="projeto">MABI | Métodos alternativos de leituras manuais de instrumentos de auscultação instalados na barragem de Itaipu</td>
+              <td class="apresentador">Luis Antônio Sucapuca e Felipe Amaral Rocha</td>
+            </tr>
+
+            <tr>
+              <td class="horario">10:00</td>
+              <td class="projeto">TQM I|Propriedades Termomecânicas dos Concretos Aplicados em Itaipu - Etapa I</td>
+              <td class="apresentador">Rafaela Goulart Gomes Oliveira</td>
+            </tr>
+
+            <tr>
+              <td class="horario">10:20</td>
+              <td class="projeto">ALT - Suscetibilidade a colmatação de filtros de areia artificial e drenos em barragens de aterro e fundações em rocha</td>
+              <td class="apresentador">Rodrigo de Lima Rodrigues</td>
+            </tr>
+
+            <tr>
+              <td class="horario">10:40</td>
+              <td class="projeto">SIHIDRO II |Sistematização e correlação de variáveis geológicas, geotécnicas, hidrogeológicas e hidrometeorológicas</td>
+              <td class="apresentador">Débora de Oliveira Fernandes</td>
+            </tr>
+
+            <tr>
+              <td class="horario">10:00</td>
+              <td class="projeto"></td>
+              <td class="apresentador"></td>
+            </tr>
+
+            <tr class="highlight-row">
+              <td class="horario">11:10</td>
+              <td class="projeto">ENCERRAMENTO</td>
+              <td class="apresentador">Itaipu Parquetec e Itaipu Binacional</td>
+            </tr>
+          </tbody> <!--Agrupa linhas-->
+        </table>
+
+        <div class="table-gap"></div> <!--Separação das tabelas-->
+
+        <table class="schedule-table">
           <thead>
-            <!--É um cabeçalho de tabelha, contém colunas com títulos-->
+            <tr class="table-date-row">
+              <th colspan="3" class="table-date">
+                <span class="date-text">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  04 DE DEZEMBRO DE 2025
+                </span>
+              </th>
+            </tr>
             <tr>
               <th>HORÁRIO</th>
               <th>Projeto</th>
@@ -28,120 +130,6 @@
           </thead>
 
           <tbody>
-            <!--Linha de dados, ou seja, tudo que não é cabeçalho, separa estruturalmente o corpo da tabela-->
-            <tr class="table-date-row">
-              <td colspan="3" class="table-date">03 DE DEZEMBRO DE 2025</td>
-            </tr>
-            <!--Célula de cabeçalho, é usada dentro do thead para títulos de colunas-->
-
-            <tr class="highlight-row">
-              <td class="horario">07:30</td>
-              <!--Célula de dados, é usada dentro do tbody para valores da tabela, tendo números, imagens etc-->
-              <td class="projeto">ABERTURA</td>
-              <td class="apresentador">Itaipu Parquetec e Itaipu Binacional</td>
-            </tr>
-
-            <tr>
-              <td class="horario">07:40</td>
-              <td class="projeto">Apresentação Convênio Ceasb V</td>
-              <td class="apresentador">Alexandra da Silva Belini</td>
-            </tr>
-
-            <tr>
-              <td class="horario">08:00</td>
-              <td class="projeto">
-                MGBA | Modelo Geotécnico para análises dos Modos de falha das
-                Barragens de Terra (ME e MD) e Enrocamento de Itaipu
-              </td>
-              <td class="apresentador">Rodrigo de Lima Rodrigues</td>
-            </tr>
-
-            <tr>
-              <td class="horario">08:20</td>
-              <td class="projeto">
-                REPAIRMAT | Materiais cimentícios especiais para reparos de
-                Estrutura de Barragens
-              </td>
-              <td class="apresentador">Rafaela Goulart</td>
-            </tr>
-
-            <tr>
-              <td class="horario">08:40</td>
-              <td class="projeto">
-                COFTERM | Avalição e validação de nova metodologia de ensaio
-                para determinação do coeficiente de dilatação térmica de
-                argamassas de reparo
-              </td>
-              <td class="apresentador">Luan Reginato</td>
-            </tr>
-
-            <tr>
-              <td class="horario">09:00</td>
-              <td class="projeto">
-                MEPMEB | Modelagem estatística e previsão dos dados de
-                monitoramento estrutural de barragens
-              </td>
-              <td class="apresentador">Edivaldo Jose Da Silva Junior</td>
-            </tr>
-
-            <tr class="highlight-row">
-              <td class="horario">09:20</td>
-              <td class="projeto">INTERVALO</td>
-              <td class="apresentador">-</td>
-            </tr>
-
-            <tr>
-              <td class="horario">09:40</td>
-              <td class="projeto">
-                MABI | Métodos alternativos de leituras manuais de instrumentos
-                de auscultação instalados na barragem de Itaipu
-              </td>
-              <td class="apresentador">Luis Antônio e Bruno João</td>
-            </tr>
-
-            <tr>
-              <td class="horario">10:00</td>
-              <td class="projeto">
-                S3DB | Simulações Tridimensionais de Barragens
-              </td>
-              <td class="apresentador">Adriana Elisabete Limberger</td>
-            </tr>
-
-            <tr>
-              <td class="horario">10:20</td>
-              <td class="projeto">
-                SIHIDRO | Simulações de fluxo 3D na Fundação da Barragem de
-                Itaipu
-              </td>
-              <td class="apresentador">Débora de Oliveira Fernandes</td>
-            </tr>
-
-            <tr>
-              <td class="horario">10:40</td>
-              <td class="projeto">
-                SRDB | Sistema de Registro e Documentação de Barragens
-              </td>
-              <td class="apresentador">Adriano Peretti da Silva Santos</td>
-            </tr>
-
-            <tr>
-              <td class="horario">11:00</td>
-              <td class="projeto">
-                TQM I | Propriedades Termomecânicas dos Concretos Aplicados em
-                Itaipu - Etapa I
-              </td>
-              <td class="apresentador">Rafaela Goulart</td>
-            </tr>
-
-            <tr class="highlight-row">
-              <td class="horario">11:10</td>
-              <td class="projeto">ENCERRAMENTO</td>
-              <td class="apresentador">Itaipu Parquetec e Itaipu Binacional</td>
-            </tr>
-            <tr class="table-date-row">
-              <td colspan="3" class="table-date">04 DE DEZEMBRO DE 2024</td>
-            </tr>
-
             <tr class="highlight-row">
               <td class="horario">07:30</td>
               <td class="projeto">ABERTURA</td>
@@ -150,45 +138,31 @@
 
             <tr>
               <td class="horario">07:40</td>
-              <td class="projeto">
-                MOMEA | Monitoramento on-line do rotor da turbina pelo método de
-                emissão acústica
-              </td>
+              <td class="projeto">MOMEA | Monitoramento...</td>
               <td class="apresentador">Christian Wendt dos Santos</td>
             </tr>
 
             <tr>
               <td class="horario">08:00</td>
-              <td class="projeto">
-                POGER | Modelagem e simulação da estrutura de concreto do Poço
-                Gerador
-              </td>
+              <td class="projeto">POGER | Modelagem...</td>
               <td class="apresentador">Adriana Elisabete Limberger</td>
             </tr>
 
             <tr>
               <td class="horario">08:20</td>
-              <td class="projeto">
-                CEUG | Mapeamento de campo elétrico de equipamentos de alta
-                tensão
-              </td>
+              <td class="projeto">CEUG | Mapeamento...</td>
               <td class="apresentador">Rafael Graeff</td>
             </tr>
 
             <tr>
               <td class="horario">08:40</td>
-              <td class="projeto">
-                ACT5 | Avaliação do comportamento térmico do autotransformador
-              </td>
+              <td class="projeto">ACT5 | Avaliação...</td>
               <td class="apresentador">Christiano Wendt dos Santos</td>
             </tr>
 
             <tr>
               <td class="horario">09:00</td>
-              <td class="projeto">
-                MHCV | Modelagem Hidráulica Escoamento em uma Comporta do
-                Vertedouro
-              </td>
+              <td class="projeto">MHCV | Modelagem...</td>
               <td class="apresentador">Christian Wendt dos Santos</td>
             </tr>
 
@@ -200,34 +174,25 @@
 
             <tr>
               <td class="horario">09:40</td>
-              <td class="projeto">IHM | Evolução da interface 3D do SOMA</td>
+              <td class="projeto">IHM | Evolução...</td>
               <td class="apresentador">Alan Lee</td>
             </tr>
 
             <tr>
               <td class="horario">10:00</td>
-              <td class="projeto">
-                PGSEC | Plataforma Técnica de Gestão do Conhecimento dos
-                Equipamentos de Alta Tensão
-              </td>
+              <td class="projeto">PGSEC | Plataforma...</td>
               <td class="apresentador">Rafael Graeff</td>
             </tr>
 
             <tr>
               <td class="horario">10:20</td>
-              <td class="projeto">
-                ACTP | Avaliação do Comportamento Térmico de Para-Raios de Óxido
-                de Zinco (ZnO) de 240 kV
-              </td>
+              <td class="projeto">ACTP | Avaliação...</td>
               <td class="apresentador">Rafael Graeff</td>
             </tr>
 
             <tr>
               <td class="horario">10:30</td>
-              <td class="projeto">
-                AVFR | Análise Numérica para Avaliação da Vida à Fadiga dos
-                Rotores da UHE Itaipu
-              </td>
+              <td class="projeto">AVFR | Análise...</td>
               <td class="apresentador">Christiano Wendt dos Santos</td>
             </tr>
 

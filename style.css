@@ -1,5 +1,4 @@
-* {
-  /*Global*/
+* { /*Global*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,7 +16,6 @@
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
 }
 
-
 .header-content {
   display: flex;
   align-items: center;
@@ -28,12 +26,12 @@
 }
 
 .site-header h1 {
-  font-size: clamp(1.2rem, 4vw, 2.2rem);
+  font-size: clamp(1.2rem, 4vw, 2.2rem); /*Valor mínimo, valor flexível e valor máximo*/
   font-weight: 700;
   margin: 0;
   color: white;
   text-align: center;
-  flex: 1;
+  flex: 1; /*O elemento vai ocupar todo o espaço disponível dentro do container*/
 }
 
 .logo-img {
@@ -53,7 +51,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
   min-height: 100vh;
 
@@ -67,7 +65,7 @@ body {
   padding: 50px 20px;
   max-width: 90%;
   margin: 0 auto;
-  overflow-x: auto;
+  overflow-x: auto; /*Controla o que acontece quando o conteúdo ultrapassa a largura do elemento e com o auto, mostra uma barra de rolagem quando necessário*/
 }
 
 table {
@@ -96,13 +94,33 @@ th {
   font-size: 1rem;
   font-weight: 600;
   color: white;
-  text-align: center;
-  padding-right: 200px;
+  letter-spacing: 1px;
+  padding: 12px 0;        
+  text-align: center;     
+  text-indent: -18px; /*Quando o valor é negativo, a primeira linha é puxada para a esquerda*/
+}
+
+.date-text {
+  position: relative;
+  left: -65px; 
+}
+
+.date-text i {
+  margin-right: 8px;
 }
 
 .table-date-row td {
   background-color: #1578bd;
   border-bottom: 2px solid #ddd;
+}
+
+.table-date-row th {
+  background-color: #1578bd !important;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px;
 }
 
 .schedule-table {
@@ -112,10 +130,16 @@ th {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   overflow: hidden; /*Esconde qualquer conteúdo que ultrapasse o tamanho do elemento*/
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.schedule-table:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
 }
 
 .schedule-table thead th {
-  background-color: #1578bd;
+  background-color: #268fda;
   color: white;
   font-weight: 600;
   padding: 12px;
@@ -127,17 +151,34 @@ th {
   transition: 0.25s;
 }
 
-.schedule-table tr:nth-child(even) {
-  background-color: #f7f7ff;
+.schedule-table th:nth-child(1), 
+.schedule-table td:nth-child(1) { /*Permite escolher somente certos elementos dentro de um grupo de irmãos*/
+  width: 18%;
+}
+
+.schedule-table th:nth-child(2),
+.schedule-table td:nth-child(2) {
+  width: 52%;
+}
+
+.schedule-table th:nth-child(3),
+.schedule-table td:nth-child(3) {
+  width: 30%;
 }
 
 .highlight-row {
   font-weight: bold;
-  background-color: #f9f9ff;
+  color: #333;
 }
 
 .highlight-row td {
-  color: #333;
+  background-color: #edf6ff !important; /*Força uma regra a ter prioridade máxima.*/
+  color: black !important;
+  font-weight: bold;
+}
+
+.table-gap {
+  height: 35px;
 }
 
 /*Tablets e notebooks menores*/
