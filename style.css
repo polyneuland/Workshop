@@ -251,3 +251,21 @@ th {
     padding: 6px 4px;
   }
 }
+
+@media (max-width: 768px) {
+  .table-date {
+    text-indent: 0; /*Remove deslocamento*/
+    text-align: center;
+  }
+
+  .date-text {
+    position: static; /*Remove o deslocamento lateral*/
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .date-text {
+    font-size: 0.9rem; /*Texto menor em telas muito pequenas*/
+  }
+}
